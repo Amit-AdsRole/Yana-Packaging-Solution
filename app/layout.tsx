@@ -13,16 +13,16 @@ const kanit = Kanit({
 
 export const metadata: Metadata = {
   title: "Yana Packaging Solution | Custom Packaging & Eco-Friendly Solutions",
-  description: "Discover Yana Packaging Solution, your trusted partner for custom, sustainable, and innovative packaging solutions. Enhance your brand with high-quality packaging designed to protect and impress.",
-
+  description:
+    "Discover Yana Packaging Solution, your trusted partner for custom, sustainable, and innovative packaging solutions.",
+  alternates: {
+    canonical: "https://www.yanapackaging.com",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <Canonical /> {/* inject canonical */}
-      </head>
+    <html lang="en">     
       <body className={`${kanit.variable} antialiased`}>
         <TopHeader />
         <Header />
