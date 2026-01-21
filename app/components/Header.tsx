@@ -60,7 +60,7 @@ export default function Header() {
                     </Link>
 
                     <Link
-                        href="/blog"
+                        href="/blogs"
                         className="font-[Kanit] font-light text-[20px] text-[#151D20]"
                     >
                         Blog

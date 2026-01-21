@@ -47,7 +47,7 @@ export default function BlogSection() {
           </div>
 
           <Link
-            href="#"
+            href="/blog-details"
             className="w-fit rounded-full border border-[#0C5170] px-6 py-3 font-kanit text-[#0C5170] transition hover:bg-[#0C5170] hover:text-white"
           >
             View all

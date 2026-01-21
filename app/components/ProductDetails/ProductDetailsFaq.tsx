@@ -93,7 +93,7 @@ export default function ProductsFaq() {
       </div>
 
       {/* Contact Box */}
-      <div className="relative max-w-222 w-full h-32.5 bg-[#0C5170] rounded-[30px] flex items-center px-8">
+      <div className="relative max-w-222 w-full py-5 md:h-32.5 bg-[#0C5170] rounded-[30px] flex flex-col md:flex-row items-center px-8 ">
         <div className="flex flex-col justify-center max-w-135">
           <h4 className="font-kanit text-[24px] leading-9 text-white mb-2">
             Still have questions?
@@ -106,7 +106,7 @@ export default function ProductsFaq() {
 
         <Link
           href="/contact"
-          className="ml-auto flex items-center gap-2 bg-white text-[#0C5170] rounded-[25px] px-6 py-3 font-kanit text-[16px] leading-6 hover:opacity-90 transition"
+          className="ml-auto mx-auto flex items-center gap-2 bg-white text-[#0C5170] rounded-[25px] px-6 py-3 font-kanit text-[16px] leading-6 hover:opacity-90 transition"
         >
           Get in touch
           <svg
