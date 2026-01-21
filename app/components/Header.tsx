@@ -9,15 +9,15 @@ export default function Header() {
         <header
             className="
         absolute top-12 left-1/2 -translate-x-1/2
-        w-[1920px] h-[72px]
+        w-480 h-18
         bg-white shadow-[0px_2px_5px_rgba(0,0,0,0.1)]
-        flex items-center justify-center
+        flex items-center justify-center z-10
       "
         >
-            <div className="w-[1559px] flex items-center justify-between">
+            <div className="w-389.75 flex items-center justify-between">
 
                 {/* Logo */}
-                <div className="flex items-center gap-[5px]">
+                <div className="flex items-center gap-1.25">
 
 
                     <Link href="/" aria-label="Go to Home">
@@ -34,10 +34,10 @@ export default function Header() {
                 </div>
 
                 {/* Navigation */}
-                <nav className="flex items-center gap-[40px]">
+                <nav className="flex items-center gap-10">
 
                     {/* Active Link */}
-                    <div className="flex flex-col items-center gap-[3px]">
+                    <div className="flex flex-col items-center gap-0.75">
                         <Link
                             href="/"
                             className="
@@ -49,7 +49,7 @@ export default function Header() {
                         >
                             Home
                         </Link>
-                        <span className="w-[68px] border-[2px] border-[#FFB201]" />
+                        <span className="w-17 border-2 border-[#FFB201]" />
                     </div>
 
                     <Link
@@ -86,7 +86,7 @@ export default function Header() {
                     href="/get-quote"
                     className="
             flex items-center justify-center gap-2
-            w-[189px] h-[48px]
+            w-47.25 h-12
             bg-[#FFB201]
             rounded-[30px]
             font-[Kanit]

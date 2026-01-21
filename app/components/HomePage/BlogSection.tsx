@@ -28,7 +28,7 @@ const blogs = [
 export default function BlogSection() {
   return (
     <section className="w-full py-20 bg-white">
-      <div className="mx-auto max-w-[1400px] px-4 flex flex-col gap-16">
+      <div className="mx-auto max-w-[1600px] px-4 flex flex-col gap-16">
 
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">

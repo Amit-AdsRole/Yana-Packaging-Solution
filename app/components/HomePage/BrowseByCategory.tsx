@@ -13,11 +13,11 @@ const categories = [
 
   return (
     <section className="w-full bg-[rgba(255,178,1,0.05)] py-16 sm:py-20">
-      <div className="mx-auto max-w-[1600px] w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-14">
+      <div className="mx-auto max-w-400 w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-14">
 
         {/* Header */}
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <h2 className="font-kanit text-3xl sm:text-4xl lg:text-[40px] leading-tight lg:leading-[56px] tracking-[-0.96px] text-[#39302A]">
+          <h2 className="font-kanit text-3xl sm:text-4xl lg:text-[40px] leading-tight lg:leading-14 tracking-[-0.96px] text-[#39302A]">
             Browse by Category
           </h2>
 
@@ -34,7 +34,7 @@ const categories = [
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-x-12 lg:gap-y-16">
           {categories.map((item, index) => (
   <div key={index} className="flex flex-col items-center gap-6">
-    <div className="w-full aspect-[16/9] max-w-[520px] rounded-2xl bg-[#E6E6E6] overflow-hidden flex items-center justify-center">
+    <div className="w-full aspect-video max-w-130 rounded-2xl bg-[#E6E6E6] overflow-hidden flex items-center justify-center">
       <Image
         src={item.image}
         alt={item.title}
@@ -43,7 +43,7 @@ const categories = [
         className="object-cover w-full h-full"
       />
     </div>
-    <p className="font-kanit text-lg sm:text-xl lg:text-[24px] leading-7 lg:leading-[36px] text-[#101E28] text-center">
+    <p className="font-kanit text-lg sm:text-xl lg:text-[24px] leading-7 lg:leading-9 text-[#101E28] text-center">
       {item.title}
     </p>
   </div>

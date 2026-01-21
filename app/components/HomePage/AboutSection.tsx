@@ -5,7 +5,7 @@ import { Upload, PenTool, Archive } from "lucide-react";
 export default function AboutSection() {
   return (
     <section className="w-full bg-white py-16 sm:py-20">
-      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
+      <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
         
         {/* Title */}
         <h2 className="font-kanit text-3xl sm:text-4xl lg:text-[40px] font-normal leading-tight tracking-[-0.96px] text-[#39302A]">
