@@ -4,28 +4,28 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFB2010D] rounded-[30px] px-[34px] py-[48px] max-w-[1686px] mx-auto">
+    <footer className="bg-[#FFB2010D] rounded-3xl py-12 px-4 sm:px-8 lg:px-12 max-w-[1686px] mx-auto">
+      
       {/* Main Container */}
-      <div className="flex justify-between gap-[120px]">
-        {/* LEFT SECTION */}
-        <div className="flex flex-col gap-[50px] max-w-[634px]">
-          {/* Logo + Description */}
-          <div className="flex flex-col gap-[27px]">
-            <div className="flex items-center gap-[5px]">
-              <Link href="/" aria-label="Go to Home">
-    <Image
-      src="/logo.png"
-      alt="YANA Packaging Solutions"
-      width={300}
-      height={64}
-      className="cursor-pointer"
-      priority
-    />
-  </Link>
-              
-            </div>
+      <div className="flex flex-col-reverse lg:flex-row gap-12 lg:gap-28 justify-between">
 
-            <p className="text-base leading-[140%] text-black max-w-[566px]">
+        {/* LEFT SECTION */}
+        <div className="flex flex-col gap-10 max-w-xl">
+          
+          {/* Logo + Description */}
+          <div className="flex flex-col gap-6">
+            <Link href="/" aria-label="Go to Home" className="w-fit">
+              <Image
+                src="/logo.png"
+                alt="YANA Packaging Solutions"
+                width={360}
+                height={56}
+                className="cursor-pointer"
+                priority
+              />
+            </Link>
+
+            <p className="text-base leading-relaxed text-black max-w-lg">
               Leading manufacturer of polypropylene boxes and PET blister trays,
               delivering durable, customizable, and eco-friendly packaging
               solutions for industries worldwide.
@@ -33,12 +33,13 @@ export default function Footer() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-[10px]">
+          <div className="flex gap-3">
             {[Facebook, Linkedin, Instagram].map((Icon, i) => (
               <Link
                 key={i}
                 href="#"
-                className="w-[40px] h-[40px] bg-black rounded-full flex items-center justify-center"
+                aria-label="Social link"
+                className="h-10 w-10 rounded-full bg-black flex items-center justify-center transition hover:opacity-80"
               >
                 <Icon size={18} className="text-white" />
               </Link>
@@ -46,16 +47,17 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-base text-black">
-  © {new Date().getFullYear()} YANA PACKAGING SOLUTIONS. All Rights Reserved.
-  Powered by AdsRole.
-</p>
+          <p className="text-sm sm:text-base text-black">
+            © {new Date().getFullYear()} YANA PACKAGING SOLUTIONS. All Rights Reserved.
+            <br className="sm:hidden" /> Powered by AdsRole.
+          </p>
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="flex flex-col gap-[62px]">
+        <div className="flex flex-col gap-12">
+
           {/* Navigation Links */}
-          <nav className="flex gap-[39px] text-[20px] text-black">
+          <nav className="flex flex-wrap gap-x-8 gap-y-4 text-lg text-black">
             <Link href="#">About Us</Link>
             <Link href="#">Blogs</Link>
             <Link href="#">Product Range</Link>
@@ -63,20 +65,21 @@ export default function Footer() {
           </nav>
 
           {/* Contact + Location */}
-          <div className="flex gap-[80px]">
+          <div className="flex flex-col sm:flex-row gap-10 sm:gap-20">
+
             {/* Contact */}
-            <div className="flex flex-col gap-[24px]">
-              <h4 className="text-[20px] font-medium">Contact Us</h4>
-              <div className="flex flex-col gap-[8px]">
+            <div className="flex flex-col gap-4">
+              <h4 className="text-lg font-medium">Contact Us</h4>
+              <div className="flex flex-col gap-2">
                 <a
                   href="tel:+919999999999"
-                  className="underline text-[20px] font-light"
+                  className="underline text-lg font-light"
                 >
                   +91-9999999999
                 </a>
                 <a
                   href="mailto:yanapackaging@mail.com"
-                  className="underline text-[20px] font-light"
+                  className="underline text-lg font-light"
                 >
                   yanapackaging@mail.com
                 </a>
@@ -84,12 +87,13 @@ export default function Footer() {
             </div>
 
             {/* Location */}
-            <div className="flex flex-col gap-[16px]">
-              <h4 className="text-[20px] font-medium">Location</h4>
-              <p className="text-[20px] font-light leading-[160%]">
+            <div className="flex flex-col gap-3">
+              <h4 className="text-lg font-medium">Location</h4>
+              <p className="text-lg font-light leading-relaxed">
                 Gurugram, Haryana
               </p>
             </div>
+
           </div>
         </div>
       </div>
