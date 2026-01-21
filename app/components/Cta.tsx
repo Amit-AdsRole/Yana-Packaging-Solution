@@ -2,15 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  ArrowRight,
-} from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 export default function CTA() {
-  /* ---------- FORM STATE ---------- */
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [productType, setProductType] = useState("Polypropylene Box");
@@ -18,20 +12,17 @@ export default function CTA() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = () => {
-    const payload = {
+    console.log({
       fullName,
       email,
       productType,
       dimension,
       message,
-    };
-
-    console.log("FORM DATA:", payload);
-    // send to API here
+    });
   };
 
   return (
-    <section className="relative w-full h-full p-20">
+    <section className="relative w-full min-h-screen px-6 py-12 lg:p-20">
       {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -40,39 +31,40 @@ export default function CTA() {
           fill
           className="object-cover"
         />
-        {/* IMPORTANT FIX */}
         <div className="absolute inset-0 bg-black/50 pointer-events-none" />
       </div>
 
-      <div className="relative z-10 max-w-400 gap-20 mx-auto h-full flex ">
+      {/* MAIN CONTAINER */}
+      <div className="relative z-10 max-w-[1600px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
+        
         {/* LEFT CONTENT */}
-        <div className="ml-44.75 max-w-184.25 text-white">
-          <h2 className="font-kanit text-[56px] leading-21 font-semibold text-[#EEEEEE]">
-            Let’s Build Your <br />
+        <div className="text-white max-w-xl lg:max-w-[740px] lg:ml-40">
+          <h2 className="font-kanit text-3xl sm:text-4xl lg:text-[56px] leading-tight font-semibold text-[#EEEEEE]">
+            Let’s Build Your <br className="hidden sm:block" />
             Packaging Solution Together
           </h2>
 
-          <div className="mt-10 space-y-6 w-112.75">
+          <div className="mt-8 space-y-4 max-w-md">
             <InfoCard>
-              <Mail size={24} className="text-[#FFB201]" />
+              <Mail size={22} className="text-[#FFB201]" />
               <a
                 href="mailto:yanapackaging@mail.com"
-                className="font-kanit text-[20px] underline"
+                className="font-kanit text-sm sm:text-base underline"
               >
                 yanapackaging@mail.com
               </a>
             </InfoCard>
 
             <InfoCard>
-              <Phone size={24} className="text-[#FFB201]" />
-              <span className="font-kanit text-[20px]">
+              <Phone size={22} className="text-[#FFB201]" />
+              <span className="font-kanit text-sm sm:text-base">
                 +91-9999999999
               </span>
             </InfoCard>
 
             <InfoCard>
-              <MapPin size={24} className="text-[#FFB201]" />
-              <span className="font-kanit text-[20px]">
+              <MapPin size={22} className="text-[#FFB201]" />
+              <span className="font-kanit text-sm sm:text-base">
                 Gurugram, Haryana
               </span>
             </InfoCard>
@@ -80,64 +72,53 @@ export default function CTA() {
         </div>
 
         {/* RIGHT FORM */}
-        <div className=" bg-black/20 rounded-[30px] backdrop-blur-2xl">
-          <div className="p-12 h-full flex flex-col justify-between gap-10">
-            <div className="space-y-10">
-              <FormInput
-                label="Full Name"
-                value={fullName}
-                onChange={setFullName}
-              />
+        <div className="w-full lg:w-[520px] bg-black/20 rounded-2xl lg:rounded-[30px] backdrop-blur-2xl">
+          <div className="p-6 sm:p-8 lg:p-12 flex  flex-col gap-8">
+            
+            <FormInput label="Full Name" value={fullName} onChange={setFullName} />
+            <FormInput label="Your email" value={email} onChange={setEmail} muted />
 
-              <FormInput
-                label="Your email"
-                value={email}
-                onChange={setEmail}
-                muted
-              />
+            <OptionGroup
+              label="Select Product Type"
+              value={productType}
+              onChange={setProductType}
+              options={[
+                "Polypropylene Box",
+                "Clamshell Packaging",
+                "Plastic Storage",
+                "Custom Packaging Solution",
+                "Other",
+              ]}
+            />
 
-              {/* PRODUCT TYPE */}
-              <OptionGroup
-                label="Select Product Type"
-                value={productType}
-                onChange={setProductType}
-                options={[
-                  "Polypropylene Box",
-                  "Clamshell Packaging",
-                  "Plastic Storage",
-                  "Custom Packaging Solution",
-                  "Other",
-                ]}
-              />
+            <OptionGroup
+              label="Dimensions (L × W × H in inch)*"
+              value={dimension}
+              onChange={setDimension}
+              options={[
+                `6" × 4" × 3"`,
+                `12" × 8" × 6"`,
+                `24" × 16" × 12"`,
+                `10" × 8" × 2"`,
+                "Custom Design",
+              ]}
+            />
 
-              {/* DIMENSIONS */}
-              <OptionGroup
-                label="Dimensions (L × W × H in inch)*"
-                value={dimension}
-                onChange={setDimension}
-                options={[
-                  `6" × 4" × 3"`,
-                  `12" × 8" × 6"`,
-                  `24" × 16" × 12"`,
-                  `10" × 8" × 2"`,
-                  "Custom Design",
-                ]}
-              />
-
-              <FormInput
-                label="Your message"
-                value={message}
-                onChange={setMessage}
-                muted
-              />
-            </div>
+            <FormInput
+              label="Your message"
+              value={message}
+              onChange={setMessage}
+              muted
+            />
 
             <button
               onClick={handleSubmit}
-              className="mx-auto flex items-center gap-2 bg-[#FFB201] text-white font-kanit text-[24px] px-8 py-3 rounded-full"
+              className="mx-auto flex items-center gap-2 bg-[#FFB201]
+              text-white font-kanit text-lg sm:text-xl lg:text-2xl
+              px-6 py-3 rounded-full"
             >
               Get Quote
-              <ArrowRight size={24} />
+              <ArrowRight size={22} />
             </button>
           </div>
         </div>
@@ -150,7 +131,7 @@ export default function CTA() {
 
 function InfoCard({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-center gap-4 bg-[rgba(255,178,1,0.4)] p-6 rounded-2xl">
+    <div className="flex items-center gap-3 bg-[rgba(255,178,1,0.4)] p-4 sm:p-5 rounded-xl">
       {children}
     </div>
   );
@@ -170,7 +151,7 @@ function FormInput({
   return (
     <div>
       <label
-        className={`block font-kanit text-[20px] ${
+        className={`block font-kanit text-sm sm:text-base ${
           muted ? "text-white/50" : "text-white"
         }`}
       >
@@ -179,8 +160,9 @@ function FormInput({
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className={`w-full bg-transparent border-b-[1.5px] mt-2 outline-none text-white
-          ${muted ? "border-white/50" : "border-white"}`}
+        className={`w-full bg-transparent border-b mt-2 outline-none
+        text-white text-sm sm:text-base
+        ${muted ? "border-white/50" : "border-white"}`}
       />
     </div>
   );
@@ -199,10 +181,10 @@ function OptionGroup({
 }) {
   return (
     <div>
-      <p className="font-kanit text-[20px] text-white mb-4">
+      <p className="font-kanit text-sm sm:text-base text-white mb-3">
         {label}
       </p>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-3">
         {options.map((option) => (
           <Option
             key={option}
@@ -230,12 +212,13 @@ function Option({
     <button
       type="button"
       onClick={onClick}
-      className={`px-6 py-4 rounded-lg font-kanit text-[20px] border-2 transition
-        ${
-          active
-            ? "bg-white text-black border-white font-medium"
-            : "border-white/50 text-white/50"
-        }`}
+      className={`px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-kanit
+      text-sm sm:text-base border-2 transition
+      ${
+        active
+          ? "bg-white text-black border-white font-medium"
+          : "border-white/50 text-white/50"
+      }`}
     >
       {children}
     </button>
