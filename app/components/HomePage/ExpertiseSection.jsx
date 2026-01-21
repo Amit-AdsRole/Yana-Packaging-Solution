@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function ExpertiseSection() {
   return (
     <section className="w-full bg-white py-16 sm:py-20">
-      <div className="mx-auto max-w-[1600px] w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
+      <div className="mx-auto max-w-[1400px] w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
 
         {/* CARD 1 – Industry Expertise */}
         <div className="relative overflow-hidden rounded-3xl bg-[#FFB201]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 p-8 lg:p-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 p-4 lg:p-8">
 
             {/* Content */}
-            <div className="flex flex-col gap-10 max-w-md">
+            <div className="flex flex-col gap-10 max-w-md pl-10">
               <div className="flex flex-col gap-4">
                 <h3 className="font-kanit text-3xl lg:text-[40px] leading-tight lg:leading-[56px] tracking-[-0.96px] text-[#454545]">
                   Industry Expertise
@@ -24,7 +24,7 @@ export default function ExpertiseSection() {
 
               <Link
                 href="#"
-                className="flex w-fit items-center justify-center gap-2 rounded-full border border-[#454545] px-8 py-4 text-[#454545] transition hover:bg-[#454545] hover:text-white"
+                className="flex w-fit items-center justify-center gap-2 rounded-full border border-[#454545] px-8 py-4  text-[#454545] transition hover:bg-[#454545] hover:text-white"
               >
                 <span className="text-lg lg:text-[20px]">Learn more</span>
                 <ArrowRight className="-rotate-90" size={20} />
@@ -47,7 +47,7 @@ export default function ExpertiseSection() {
 
         {/* CARD 2 – Eco-Friendly Materials */}
         <div className="relative overflow-hidden rounded-3xl bg-[rgba(12,81,112,0.1)]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 p-8 lg:p-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 p-4 lg:p-8">
 
             {/* Image */}
             <div className="w-full aspect-[3/2] relative rounded-2xl bg-[#E6E6E6] overflow-hidden flex items-center justify-center">
@@ -61,7 +61,7 @@ export default function ExpertiseSection() {
             </div>
 
             {/* Content */}
-            <div className="order-1 lg:order-2 flex flex-col gap-10 max-w-md ml-auto">
+            <div className="order-1 lg:order-2 flex flex-col gap-10 max-w-md ml-auto pr-15">
               <div className="flex flex-col gap-4">
                 <h3 className="font-kanit text-3xl lg:text-[40px] leading-tight lg:leading-[56px] tracking-[-0.96px] text-[#454545]">
                   Eco-Friendly Materials
@@ -84,10 +84,10 @@ export default function ExpertiseSection() {
 
         {/* CARD 3 – Quality Assurance */}
         <div className="relative overflow-hidden rounded-3xl bg-[#0C5170]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 p-8 lg:p-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 p-4 lg:p-8">
 
             {/* Content */}
-            <div className="flex flex-col gap-10 max-w-md">
+            <div className="flex flex-col gap-10 max-w-md pl-10">
               <div className="flex flex-col gap-4">
                 <h3 className="font-kanit text-3xl lg:text-[40px] leading-tight lg:leading-[56px] tracking-[-0.96px] text-white">
                   Quality Assurance
