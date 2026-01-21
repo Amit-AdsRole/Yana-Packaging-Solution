@@ -21,17 +21,17 @@ export default function HeroSection() {
 
   return (
     <section className="bg-[#FFF9F0] py-20 sm:py-32 md:py-40 w-full">
-      <div className="mx-auto max-w-[1620px] px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-24">
+      <div className="mx-auto max-w-405 px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-24">
         
         {/* LEFT CONTENT */}
-        <div className="max-w-full md:max-w-[720px] text-center md:text-left">
+        <div className="max-w-full md:max-w-180 text-center md:text-left">
           <h1 className="font-kanit text-4xl sm:text-5xl lg:text-[56px] font-semibold leading-tight text-[#0C5170]">
             Innovative Packaging <br />
             Solutions for{" "}
             <span className="text-[#FFB201]">Every Industry</span>
           </h1>
 
-          <p className="mt-4 max-w-full sm:max-w-[720px] mx-auto md:mx-0 font-kanit text-base sm:text-lg md:text-[20px] leading-relaxed text-[#6B6B6B]">
+          <p className="mt-4 max-w-full sm:max-w-180 mx-auto md:mx-0 font-kanit text-base sm:text-lg md:text-[20px] leading-relaxed text-[#6B6B6B]">
             Durable, customizable, and eco-friendly polypropylene boxes & PET blister trays designed for precision and performance.
           </p>
 
@@ -59,7 +59,7 @@ export default function HeroSection() {
             </div>
 
             <div>
-              <p className="font-kanit text-sm sm:text-[14px] font-medium text-[#000]">
+              <p className="font-kanit text-sm sm:text-[14px] font-medium text-black">
                 Rated 4.8/5
               </p>
               <p className="font-kanit text-xs sm:text-[12px] text-[#777]">
@@ -70,8 +70,8 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT IMAGE SLIDER */}
-        <div className="relative w-full max-w-[420px]">
-          <div className="overflow-hidden rounded-[32px]">
+        <div className="relative w-full max-w-105">
+          <div className="overflow-hidden rounded-4xl">
             <div
               className="flex transition-transform duration-700"
               style={{ transform: `translateX(-${active * 100}%)` }}
