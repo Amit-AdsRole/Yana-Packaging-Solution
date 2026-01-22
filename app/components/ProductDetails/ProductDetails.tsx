@@ -40,7 +40,7 @@ export default function ProductDetails() {
     <section className="w-full ">
       <div className="conatiner flex flex-col gap-20 pt-30 pb-20">
         {/* Product Section */}
-      <div className="relative max-w-380 mx-auto grid grid-cols-2 gap-10 pt-10">
+      <div className="relative max-w-380 mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 pt-10 px-4">
         {/* Left Images */}
         <div className=" w-full h-full flex">
           {/* Side Thumbnails */}
@@ -120,9 +120,9 @@ export default function ProductDetails() {
       </div>
 
       {/* Details Tabs */}
-      <div className="w-277.5 mx-auto">
+      <div className="md:w-277.5 w-full mx-auto px-5 ">
         {/* Tabs Header */}
-        <div className="flex gap-12.75 mb-6">
+        <div className="flex gap-2 md:gap-12.75 mb-6 md:flex-row flex-col ">
           {tabs.map((tab, index) => (
             <div
               key={index}

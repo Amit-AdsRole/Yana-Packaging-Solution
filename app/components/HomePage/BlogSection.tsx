@@ -6,22 +6,22 @@ const blogs = [
   {
     title: "5 Benefits of Using Polypropylene Boxes in Industrial Packaging",
     image: "/home-page/banner-1.jpg",
-    href: "#",
+    href: "/blog-details",
   },
   {
     title: "The Role of PET Blister Trays in Modern Retail Packaging",
     image: "/home-page/banner-1.jpg",
-    href: "#",
+    href: "/blog-details",
   },
   {
     title: "Eco-Friendly Packaging: How Recyclable Materials Shape the Future",
     image: "/home-page/banner-1.jpg",
-    href: "#",
+    href: "/blog-details",
   },
   {
     title: "Custom Packaging Solutions: Why One Size Doesn’t Fit All",
     image: "/home-page/banner-1.jpg",
-    href: "#",
+    href: "/blog-details",
   },
 ];
 
@@ -31,8 +31,8 @@ export default function BlogSection() {
       <div className="mx-auto max-w-[1600px] px-4 flex flex-col gap-16">
 
         {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-          <div className="flex flex-col gap-4 max-w-xl">
+        <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8">
+          <div className="flex flex-col items-center md:items-start gap-4 max-w-xl">
             <span className="inline-flex w-fit rounded-full bg-[#EBEFF5] px-3 py-1 font-kanit text-sm text-[#202939]">
               Blog
             </span>
@@ -41,7 +41,7 @@ export default function BlogSection() {
               Our latest blogs
             </h2>
 
-            <p className="font-kanit text-lg text-[#697586]">
+            <p className="font-kanit text-center md:text-left text-lg text-[#697586]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>

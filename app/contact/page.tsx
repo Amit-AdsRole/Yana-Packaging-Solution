@@ -32,10 +32,10 @@ export default function Contact() {
         </div>
 
         {/* MAIN CONTAINER */}
-        <div className="relative z-10 max-w-[1600px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 pt-30">
+        <div className="relative z-10 max-w-400 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 pt-30">
           
           {/* LEFT CONTENT */}
-          <div className="text-black max-w-xl lg:max-w-[740px] lg:ml-40">
+          <div className="text-black max-w-xl lg:max-w-185 lg:ml-40">
             <h2 className="font-kanit text-3xl sm:text-4xl lg:text-[56px] leading-tight font-semibold black-[#EEEEEE]">
               Let’s Build Your <br className="hidden sm:block" />
               Packaging Solution Together
@@ -55,21 +55,28 @@ export default function Contact() {
               <InfoCard>
                 <Phone size={22} className="text-[#FFB201]" />
                 <span className="font-kanit text-sm sm:text-base">
-                  +91-9999999999
+                  <a
+                  href="tel:+91-9999999999"
+                  className="font-kanit text-sm sm:text-base underline"
+                >
+                  +91-9999999999</a>
                 </span>
               </InfoCard>
 
               <InfoCard>
                 <MapPin size={22} className="text-[#FFB201]" />
                 <span className="font-kanit text-sm sm:text-base">
-                  Gurugram, Haryana
+                  <a
+                  href="#"
+                  className="font-kanit text-sm sm:text-base underline"
+                >Gurugram, Haryana</a>
                 </span>
               </InfoCard>
             </div>
           </div>
 
           {/* RIGHT FORM */}
-          <div className="w-full lg:w-[520px] bg-black/85 rounded-2xl lg:rounded-[30px] ">
+          <div className="w-full lg:w-130 bg-black/85 rounded-2xl lg:rounded-[30px] ">
             <div className="p-6 sm:p-8 lg:p-12 flex flex-col gap-8">
 
               <FormInput label="Full Name" value={fullName} onChange={setFullName} />

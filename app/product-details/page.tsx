@@ -9,7 +9,7 @@ export default function Page() {
       <ProductDetails />
       <RelatedProducts />
       <Cta />
-      <ProductDetailsFaq />
+      <ProductDetailsFaq /> 
 
     </>
   );

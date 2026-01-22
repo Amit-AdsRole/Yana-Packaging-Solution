@@ -61,7 +61,7 @@ export default function ExpertiseSection() {
             </div>
 
             {/* Content */}
-            <div className="order-1 lg:order-2 flex flex-col gap-10 max-w-md ml-auto pr-15">
+            <div className="order-1 lg:order-2 flex flex-col gap-10 max-w-md ml-auto">
               <div className="flex flex-col gap-4">
                 <h3 className="font-kanit text-3xl lg:text-[40px] leading-tight lg:leading-14 tracking-[-0.96px] text-[#454545]">
                   Eco-Friendly Materials

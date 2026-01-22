@@ -8,7 +8,7 @@ export default function AboutSection() {
       <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
         
         {/* Title */}
-        <h2 className="font-kanit text-3xl sm:text-4xl lg:text-[40px] font-normal leading-tight tracking-[-0.96px] text-[#39302A]">
+        <h2 className="font-kanit text-3xl text-center md:text-left sm:text-4xl lg:text-[40px] font-normal leading-tight tracking-[-0.96px] text-[#39302A]">
           About our product
         </h2>
 

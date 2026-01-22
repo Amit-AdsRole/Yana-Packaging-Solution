@@ -3,7 +3,7 @@ import { Phone, Mail } from "lucide-react";
 export default function TopHeader() {
   return (
     <header className="w-full bg-[#0C5170]">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-20">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 ">
         <div className="flex flex-wrap items-center gap-3 py-2 text-white font-kanit">
 
           {/* Phone */}
