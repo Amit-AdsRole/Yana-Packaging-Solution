@@ -43,7 +43,7 @@ export default function ProductsFaq() {
   };
 
   return (
-    <section className="bg-white flex flex-col items-center px-8 sm:px-25 lg:px-126.25 py-20 gap-24 w-full max-w-480 mx-auto">
+    <section className="bg-white flex flex-col items-center px-8 sm:px-25 lg:px-126.25 py-20 gap-14 w-full max-w-480 mx-auto">
       {/* Header */}
       <div className="flex flex-col items-center gap-2 max-w-81.5 text-center">
         <h2 className="font-kanit text-[40px] leading-15 text-[#2E2E27]">
@@ -93,7 +93,7 @@ export default function ProductsFaq() {
       </div>
 
       {/* Contact Box */}
-      <div className="relative max-w-222 w-full py-5 md:h-32.5 bg-[#0C5170] rounded-[30px] flex flex-col md:flex-row items-center px-8 ">
+      <div className="relative w-full py-5 px-5 md:h-32.5 bg-[#0C5170] rounded-[30px] flex flex-col md:flex-row justify-between md:items-center gap-5">
         <div className="flex flex-col justify-center max-w-135">
           <h4 className="font-kanit text-[24px] leading-9 text-white mb-2">
             Still have questions?
@@ -104,9 +104,10 @@ export default function ProductsFaq() {
           </p>
         </div>
 
-        <Link
+       <div className="flex items-start">
+         <Link
           href="/contact"
-          className="ml-auto mx-auto flex items-center gap-2 bg-white text-[#0C5170] rounded-[25px] px-6 py-3 font-kanit text-[16px] leading-6 hover:opacity-90 transition"
+          className=" flex items-start gap-2 bg-white text-[#0C5170] rounded-[25px] px-6 py-3 font-kanit text-[16px] leading-6 hover:opacity-90 transition"
         >
           Get in touch
           <svg
@@ -123,6 +124,7 @@ export default function ProductsFaq() {
             />
           </svg>
         </Link>
+       </div>
       </div>
     </section>
   );

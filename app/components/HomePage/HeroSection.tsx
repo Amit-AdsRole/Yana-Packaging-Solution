@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   "/home-page/banner-1.jpg",
@@ -37,14 +38,17 @@ export default function HeroSection() {
 
           {/* Buttons */}
           <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start sm:gap-6 gap-4">
-            <button className="rounded-full bg-[#FFB201] px-6 py-3 sm:py-2 font-kanit text-lg sm:text-[24px] font-medium text-white shadow w-full sm:w-auto">
-              Get Quote →
-            </button>
-
-            <button className="font-kanit text-lg sm:text-[24px] font-medium text-[#0C5170] w-full sm:w-auto">
-              Explore Products
-            </button>
-          </div>
+  <Link href="/contact">
+    <button className="rounded-full bg-[#FFB201] px-6 py-3 sm:py-2 font-kanit text-lg sm:text-[24px] font-medium text-white shadow w-full sm:w-auto">
+      Get Quote →
+    </button>
+  </Link>
+ <Link href="/contact">
+  <button className="font-kanit text-lg sm:text-[24px] font-medium text-[#0C5170] w-full sm:w-auto">
+    Explore Products
+  </button>
+  </Link>
+</div>
 
           {/* Rating */}
           <div className="mt-8 flex items-center justify-center md:justify-start gap-4">

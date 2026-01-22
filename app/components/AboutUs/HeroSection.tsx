@@ -5,12 +5,12 @@ export default function HeroSection() {
     <section className="w-full bg-white py-16 mt-15">
       <div className="mx-auto max-w-7xl px-6">
         {/* Small label */}
-        <p className="mb-2 text-xl font-medium text-gray-500">
+        <p className="font-kanit mb-2 text-[24px] font-light text-gray-500">
           About Us –
         </p>
 
         {/* Heading */}
-        <h2 className="mb-10 text-4xl font-bold text-[#FFB201] md:text-4xl">
+        <h2 className="font-kanit mb-10 text-4xl font-bold text-[#FFB201] md:text-[64px]">
           Crafting Reliable Packaging Solutions
         </h2>
 
@@ -29,7 +29,7 @@ export default function HeroSection() {
           </div>
 
           {/* Text */}
-          <p className="text-base leading-relaxed text-gray-700">
+          <p className="font-kanit font-light  text-[24px] leading-relaxed text-gray-700">
             Trusted manufacturer of polypropylene boxes & PET trays,
             delivering durable, eco-friendly, and customizable packaging
             solutions for industries worldwide.

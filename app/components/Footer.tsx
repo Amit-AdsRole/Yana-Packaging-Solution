@@ -48,8 +48,14 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm sm:text-base text-black">
-            © {new Date().getFullYear()} YANA PACKAGING SOLUTIONS. All Rights Reserved.
-            <br className="sm:hidden" /> Powered by AdsRole.
+            © {new Date().getFullYear()} <a
+                  href="/"
+                  className="font-kanit text-sm sm:text-base underline" rel="follow"
+                >YANA PACKAGING SOLUTIONS.</a> All Rights Reserved.
+            <br className="sm:hidden" /> Powered by <a
+                  href="https://adsrole.com/"
+                  className="font-kanit text-sm sm:text-base underline" rel="nofollow" target="_blank"
+                >AdsRole.</a>
           </p>
         </div>
 
@@ -58,10 +64,10 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap gap-x-8 gap-y-4 text-lg text-black">
-            <Link href="#">About Us</Link>
-            <Link href="#">Blogs</Link>
-            <Link href="#">Product Range</Link>
-            <Link href="#">Contacts</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/blogs">Blogs</Link>
+            <Link href="/products">Product Range</Link>
+            <Link href="/contact">Contacts</Link>
           </nav>
 
           {/* Contact + Location */}
