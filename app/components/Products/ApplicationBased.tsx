@@ -4,12 +4,12 @@ import Image from "next/image"
 export default function ApplicationBased() {
 
 const categories = [
-  { title: "Automotive Packaging", image: "/home-page/banner-1.jpg" },
-  { title: "Electronics & Telecom Packaging", image: "/home-page/banner-1.jpg" },
-  { title: "FMCG & Consumer Goods", image: "/home-page/banner-1.jpg" },
+  { title: "Automotive Packaging", image: "/products-img/product-13.png" },
+  { title: "Electronics & Telecom Packaging", image: "/products-img/product-12.png" },
+  { title: "FMCG & Consumer Goods", image: "/products-img/product-9.png" },
   { title: "Textile & Garments", image: "/home-page/banner-1.jpg" },
-  { title: "Agricultural / Nursery Boxes", image: "/home-page/banner-1.jpg" },
-  { title: "Pharma & Healthcare", image: "/home-page/banner-1.jpg" },
+  { title: "Agricultural / Nursery Boxes", image: "/products-img/product-11.jpeg" },
+  { title: "Pharma & Healthcare", image: "/products-img/product-6.jpeg" },
 ];
 
   return (

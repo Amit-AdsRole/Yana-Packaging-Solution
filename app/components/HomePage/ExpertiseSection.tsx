@@ -34,7 +34,7 @@ export default function ExpertiseSection() {
             {/* Image */}
            <div className="w-full aspect-3/2 relative rounded-2xl bg-[#E6E6E6] overflow-hidden flex items-center justify-center">
   <Image
-    src="/home-page/banner-1.jpg"
+    src="/products-img/product-8.jpeg"
     alt="Banner 1"
     width={1200}
     height={800}
@@ -52,7 +52,7 @@ export default function ExpertiseSection() {
             {/* Image */}
             <div className="w-full aspect-3/2 relative rounded-2xl bg-[#E6E6E6] overflow-hidden flex items-center justify-center">
               <Image
-    src="/home-page/banner-1.jpg"
+    src="/products-img/product-9.png"
     alt="Banner 1"
     width={1200}
     height={800}
@@ -109,7 +109,7 @@ export default function ExpertiseSection() {
             {/* Image */}
             <div className="w-full aspect-3/2 relative rounded-2xl bg-[#E6E6E6] overflow-hidden flex items-center justify-center">
               <Image
-    src="/home-page/banner-1.jpg"
+    src="/products-img/product-10.png"
     alt="Banner 1"
     width={1200}
     height={800}

@@ -4,12 +4,12 @@ import Image from "next/image"
 
 export default function BrowseByCategory() {
   const categories = [
-    { title: "Regular Slotted Container (RSC)", image: "/home-page/banner-1.jpg", href: "/product-details" },
-    { title: "Die-Cut Boxes", image: "/home-page/banner-1.jpg", href: "/product-details" },
-    { title: "Partitioned Boxes", image: "/home-page/banner-1.jpg", href: "/product-details" },
-    { title: "Top-Bottom Lid Boxes", image: "/home-page/banner-1.jpg", href: "/product-details" },
-    { title: "Tote Boxes / Nestable Bins", image: "/home-page/banner-1.jpg", href: "/product-details" },
-    { title: "Folding / Knock-Down Boxes", image: "/home-page/banner-1.jpg", href: "/product-details" },
+    { title: "Regular Slotted Container (RSC)", image: "/products-img/product-1.jpeg", href: "/product-details" },
+    { title: "Die-Cut Boxes", image: "/products-img/product-2.jpeg", href: "/product-details" },
+    { title: "Partitioned Boxes", image: "/products-img/product-3.jpeg", href: "/product-details" },
+    { title: "Top-Bottom Lid Boxes", image: "/products-img/product-4.jpeg", href: "/product-details" },
+    { title: "Tote Boxes / Nestable Bins", image: "/products-img/product-5.jpeg", href: "/product-details" },
+    { title: "Folding / Knock-Down Boxes", image: "/products-img/product-6.jpeg", href: "/product-details" },
   ];
 
   return (

@@ -14,7 +14,7 @@ export default function Home() {
       <AboutSection />
       <BrowseByCategory />
       <ExpertiseSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Cta />
       <ProductDetailsFaq />
     </div>

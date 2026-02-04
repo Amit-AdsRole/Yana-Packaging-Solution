@@ -65,7 +65,7 @@ export default function Footer() {
           {/* Navigation Links */}
           <nav className="flex flex-wrap gap-x-8 gap-y-4 text-lg text-black">
             <Link href="/about">About Us</Link>
-            <Link href="/blogs">Blogs</Link>
+            {/* <Link href="/blogs">Blogs</Link> */}
             <Link href="/products">Product Range</Link>
             <Link href="/contact">Contacts</Link>
           </nav>

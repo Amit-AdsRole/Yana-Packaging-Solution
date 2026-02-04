@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const slides = [
-  "/home-page/banner-1.jpg",
-  "/home-page/banner-1.jpg",
-  "/home-page/banner-1.jpg",
+  "/products-img/product-1.jpeg",
+  "/products-img/product-2.jpeg",
+  "/products-img/product-7.jpeg",
 ];
 
 export default function HeroSection() {
